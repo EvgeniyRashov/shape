@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TEST 1.2</title>
+</head>
+<body>
+    <h1>Второе тестовое задание<br>"Форма обратной связи"</h1>
+<form  method='post' onsubmit='return Backend()' style="width: 500px;"> 
+    <span style="color: red;">*</span><label>Поля обязательные для заполнения</label><br>
+    <p><b>Комментарий:</b>
+        <input type='text' name='comment' id='STR1' placeholder="Комментарий">
+    </p><br>
+    <p><b>ФИО:</b><span style="color: red;">*</span>
+        <input type='text' name='fio' id='STR2' placeholder="ФИО" required>
+        <p id="p"> <span id="span"> </span></p>   
+    </p><br>  
+    <p><b>Адрес:</b>
+        <input type='text' name='address' id='STR3' placeholder="Ваш адрес">
+    </p><br>
+    <p><b>Email:</b>
+        <input type='email' name="email" id='STR4' placeholder="Ваш email">
+        <p id="p"> <span id="span"> </span></p>
+    </p><br>
+    <p><b>Мобильный телефон:</b><span style="color: red;">*</span>
+        <input type='tel' name='tele' id='STR5' placeholder="Ваш телефон" required>
+        <p id="p"> <span id="span"> </span></p>
+    </p><br>
+    <p><b>Файл:</b>
+        <input type='file' name='file' id='STR6'>
+    </p><br>
+    <button onlick='return Backend()'>Отправить</button>
+    <script src="script.js"></script>
+</body>
+</html>
